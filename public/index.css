@@ -1,27 +1,73 @@
-html {
-	background: #cyan;
+/* ==== Navigation ==== */
+.navigation-list {
+  background: black;
+  padding: 0 20px;
 }
-dl {
-	background: black;
-}
-dl li{
-	display: inline-block;
 
+.navigation-list__item {
+  text-align: center;
 }
-.sectionheader {
-	font-size: 1.25em;
+
+.navigation-list__link {
+  display: inline-block;
+  margin: 1em;
+  padding: 10px;
 }
-a {
-	color: #fff;
+
+.navigation-list__link a:hover {
+  font-weight: bold;
+  color: blue;
 }
-.copy span {
-	text-align: right;
+
+/* ==== Section ==== */
+section {
+  padding: 0 20px;
 }
-.sectionheader ~ * {
-	width: 50%;
+
+.section-body--flex-column {
+  display: flex;
+  flex-direction: column;
 }
-.text {
-	float: right;
-	width: 30%;
-    margin: 0 15% 0 0;
+
+.section-body--flex-column .section-body-image {
+  max-width: 25%;
+  align-self: center;
+}
+
+.section-header {
+  font-size: 1.25em;
+}
+
+.section-body--flex-row {
+  display: flex;
+}
+
+.section-body-image {
+  box-sizing: border-box;
+  flex: 1;
+  max-width: calc(50% - 80px);
+}
+
+.section-body-text {
+  box-sizing: border-box;
+  flex: 1;
+  max-width: 30%;
+  margin: 0 15% 0 80px;
+}
+
+/* ==== Footer ==== */
+#footer {
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  display: block;
+  color: #fff;
+  margin-top: 40px;
+}
+
+#bottom--align {
+  box-sizing: border-box;
+  bottom: 0;
+  margin-bottom: 10px;
 }

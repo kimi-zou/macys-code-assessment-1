@@ -1,3 +1,6 @@
-var firstimage  = $('#image').first();
-firstimage.css('border-radius','1000px');
-
+document.addEventListener('DOMContentLoaded', function () {
+  const firstSectionBodyImage = document.querySelector('.section-body-image');
+  if (firstSectionBodyImage) {
+    firstSectionBodyImage.style.borderRadius = '1000px';
+  }
+});
